@@ -457,6 +457,7 @@
         async function fetchFromGoogleSheets() {
             // URL-encode sheet name to handle spaces and special characters (e.g., "DB test videos" becomes "DB%20test%20videos")
             const url = `https://sheets.googleapis.com/v4/spreadsheets/${CONFIG.SHEET_ID}/values/${encodeURIComponent(CONFIG.SHEET_NAME)}?key=${CONFIG.API_KEY}`;
+            console.log(url);
 
             const response = await fetch(url);
 
