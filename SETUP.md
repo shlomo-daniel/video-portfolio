@@ -99,6 +99,14 @@ const CONFIG = {
 3. Replace `YOUR_GOOGLE_SHEET_ID_HERE` with your Sheet ID
 4. Replace `YOUR_GOOGLE_API_KEY_HERE` with your API Key
 5. If your sheet tab is named something other than "Videos", update `SHEET_NAME`
+
+**Note on Sheet Naming:** The application automatically URL-encodes sheet names to handle special characters. However, it's recommended to avoid spaces and special characters in sheet tab names for cleaner URLs and better compatibility.
+
+- ✅ **Good Examples:** `Videos`, `DB_test_videos`, `Portfolio2024`, `clientWork`
+- ❌ **Problematic Examples:** `DB test videos`, `Client's Work`, `Video (2024)`
+
+If your sheet name contains spaces, consider renaming it to use underscores (`_`) or camelCase instead.
+
 6. Save the file
 
 ## Deploy to Vercel

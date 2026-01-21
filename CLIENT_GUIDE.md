@@ -52,6 +52,11 @@ This guide will help you add, edit, and remove videos from your portfolio websit
 1. Click on your bookmarked Google Sheet link
 2. You should see columns: `videoId`, `title`, `description`, `category`
 
+**Note on Sheet Tab Names:** If you need to rename your Google Sheet tab (the tab at the bottom of the spreadsheet), avoid using spaces and special characters. The system handles URL-encoding automatically, but it's best practice to use underscores or camelCase for cleaner configuration.
+
+- ✅ **Recommended:** `Videos`, `DB_test_videos`, `Portfolio2024`, `clientWork`
+- ❌ **Avoid:** `DB test videos`, `Client's Work`, `Video (2024)`
+
 ### Step 2: Add a New Row
 
 Click on the next empty row and fill in:
